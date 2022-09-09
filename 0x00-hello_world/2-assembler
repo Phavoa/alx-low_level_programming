@@ -1,2 +1,2 @@
 #!/bin/bash
-gss -S $CFILE.s
+gss -s $CFILE.s
