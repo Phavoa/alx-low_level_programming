@@ -7,9 +7,9 @@
  */
 int main(void)
 {
-int Alpha;
-for (Alpha = "z"; Alpha = "a"; Alpha--)
-{putchar (Alpha);
+int i;
+for (i = 122; i = 97; i--)
+{putchar ("%c", i);
 }
 {putchar("\n");
 }
