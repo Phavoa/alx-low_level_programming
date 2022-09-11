@@ -1,13 +1,14 @@
 #include <stdio.h>
 /**
- * main - Entry point
- * print all single digit numbers of base 10 starting from 0,followed by a new line
- */
+*main - Entry point
+*
+* Return: Always 0 (Success)
+*/
 int main(void)
 {
 int r;
-for(r = '0'; r <= '9'; n++)
+for (r = -1; r <= 9; r++)
 {printf("%d\n", r)
 }
-return: (0)
+return (0);
 }
