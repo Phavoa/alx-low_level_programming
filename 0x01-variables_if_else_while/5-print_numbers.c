@@ -8,7 +8,9 @@ int main(void)
 {
 int r;
 for (r = -1; r <= 9; r++)
-{printf("%d\n", r);
+{printf("%d", r);
+}
+{printf("\n")
 }
 return (0);
 }
