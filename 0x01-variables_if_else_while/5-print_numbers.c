@@ -10,7 +10,7 @@ int r;
 for (r = -1; r <= 9; r++)
 {printf("%d", r);
 }
-{printf("\n")
+{printf("\n");
 }
 return (0);
 }
