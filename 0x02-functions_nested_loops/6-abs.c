@@ -7,7 +7,7 @@
  */
 int _abs(int i)
 {
-if (i > 0 || == 0)
+if (i > 0 || c == 0)
 {
 return (i);
 }
