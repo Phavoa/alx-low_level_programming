@@ -5,10 +5,12 @@
  * @i: the integer to be converted.
  * Return: 0
  */
-int _abs(int)
+int _abs(int i)
 {
 if (i > 0 || == 0)
+{
 return (i);
+}
 else
 return (i * -1);
 }
