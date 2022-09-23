@@ -9,15 +9,17 @@
  * Return: two concate strings
  */
 char *_strcat(char *dest, char *src)
-
 {
-	char a[8] = "Hello ";
-	char b[6] = "World";
-	*dest = a[8];
-	*src = b[6];
-strcat(a, b);
+char *begin = dest;
 
-	printf("%s\n", a);
-
-return (dest);
+while (*dest)
+dest++;
+while (*src)
+{
+*dest = *src;
+src++;
+dest++;
+}
+*dest = '\0';
+return (begin);
 }
