@@ -12,9 +12,9 @@ char *_strcat(char *dest, char *src)
 
 {
 	char a[8] = "Hello ";
-	*dest = a[8];
 	char b[6] = "World";
-	 *src = b[6];
+	*dest = a[8];
+	*src = b[6];
 strcat(a, b);
 
 	printf("%s\n", a);
