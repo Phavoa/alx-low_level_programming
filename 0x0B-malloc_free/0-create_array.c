@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdio.h>
-#include <stdlib.hi>
+#include <stdlib.h>
 /**
  * create_array - creat an array of char
  * @size: name of int variable
