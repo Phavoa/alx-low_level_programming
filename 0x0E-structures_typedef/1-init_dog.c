@@ -12,8 +12,12 @@
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	struct dog *d = "dog"
-	void(char *name)
-	void(float age)
-	void(char *owner)
+	if (d == 0)
+	return;
+	d->name = "tega";
+	d->age = 9.1;
+	d->owner = "favour";
+	(void)name;
+	(void)age;
+	(void)owner;
 }
