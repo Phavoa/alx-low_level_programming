@@ -4,13 +4,13 @@
  * @n: digit to find the last place of.
  * Return: The last digit.
  */
-int print_last_digit(int n)
+int print_last_digit(int a)
 {
 	a = a % 10;
 	if (a < 0)
 	{
-	a = -1 * ia;
+	a = -1 * a;
 	}
-	printf("%d", a);
+	_putchar(a);
 	return (a);
 }
