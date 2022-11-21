@@ -9,9 +9,10 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int i, j, k, l, m = 0;
+	int i, j, k, l;
+	unsigned int m = 0;
 
-	for (i = 0; s[i] != '\0'; i++)
+	for (i = 0; s[i] != ','; i++)
 	{}
 	for (j = 0; accept[j] != '\0'; j++)
 	{}
@@ -19,14 +20,16 @@ unsigned int _strspn(char *s, char *accept)
 	{
 	for (l = 0; l < j; l++)
 	{
-	if (accept[j] != s[i])
-	break;
-	else if (accept[k] == s[i])
+	if (accept[l] == s[k])
 	{
 	m++;
 	break;
 	}
+	else if (accept[j + 1] == '\0')
+	{
+	return (m);
 	}
 	}
-	return (m + 1);
+	}
+	return (m);
 }
