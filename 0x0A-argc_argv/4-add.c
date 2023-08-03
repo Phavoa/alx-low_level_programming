@@ -13,32 +13,31 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, k, add = 0;
+	int i, j, number, add = 0;
 
-	if (argc <= 1)
+	for (i = 1; i < argc; i++)
 	{
-		printf("0\n");
-	}
-	else
-	{
-		for (i = 1; i < argc; i++)
+		j = 0;
+		while (argv[i][j])
 		{
-			k = 0;
-
-			if (atoi(argv[i]) == 0)
+			if ((argv[i][j]) < '0' || argv[i][j] > '9')
 			{
-				printf("Error");
-				k++;
-				break;
+				printf("Error\n");
+				return (1);
 			}
-			else
-			{
-				add = add + atoi(argv[i]);
-			}
-			if (k == 1)
-				break;
+			j++;
 		}
-		printf("%d\n", add);
+		number = atoi(argv[i]);
+		if (number < 0)
+		{
+			printf("0\n");
+			return (0);
+		}
+		else
+		{
+			add += number;
+		}
 	}
+	printf("%d\n", add);
 	return (0);
 }
